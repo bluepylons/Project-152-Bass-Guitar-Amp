@@ -78,7 +78,7 @@ U 1 1 5D62D85D
 P 2850 1500
 F 0 "T1" H 2850 2081 50  0000 C CNN
 F 1 "Transformer_1P_2S" H 2850 1990 50  0000 C CNN
-F 2 "" H 2850 1500 50  0001 C CNN
+F 2 "Project-152-Bass-Guitar-Amp:TE 49008024RC62" H 2850 1500 50  0001 C CNN
 F 3 "~" H 2850 1500 50  0001 C CNN
 	1    2850 1500
 	1    0    0    -1  
@@ -220,19 +220,6 @@ F 3 "" H 1700 3800 50  0001 C CNN
 	1    1700 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:AudioJack2 J2
-U 1 1 5D6651E0
-P 1250 4000
-F 0 "J2" H 1282 4325 50  0000 C CNN
-F 1 "AudioJack2" H 1282 4234 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 1250 4000 50  0001 C CNN
-F 3 "~" H 1250 4000 50  0001 C CNN
-	1    1250 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 3900 1600 3900
 Wire Wire Line
 	1600 3900 1600 3750
 Wire Wire Line
@@ -385,10 +372,10 @@ Wire Wire Line
 Text Notes 3850 4850 0    50   ~ 0
 Gain Sw
 $Comp
-L Switch:SW_SPST SW_HIGH_GAIN1
+L Switch:SW_SPST SW4
 U 1 1 5D64241B
 P 3900 5300
-F 0 "SW_HIGH_GAIN1" V 3854 5398 50  0000 L CNN
+F 0 "SW4" V 3854 5398 50  0000 L CNN
 F 1 "SW_SPST" V 3945 5398 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 3900 5300 50  0001 C CNN
 F 3 "~" H 3900 5300 50  0001 C CNN
@@ -648,7 +635,7 @@ U 1 1 5D6A8C8C
 P 6750 1400
 F 0 "J6" H 6858 1581 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6858 1490 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6750 1400 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 6750 1400 50  0001 C CNN
 F 3 "~" H 6750 1400 50  0001 C CNN
 	1    6750 1400
 	1    0    0    -1  
@@ -659,7 +646,7 @@ U 1 1 5D6AACB7
 P 6750 1850
 F 0 "J7" H 6858 2031 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6858 1940 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 6750 1850 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 6750 1850 50  0001 C CNN
 F 3 "~" H 6750 1850 50  0001 C CNN
 	1    6750 1850
 	1    0    0    -1  
@@ -4070,7 +4057,7 @@ U 1 1 5F5E82E6
 P 14100 13450
 F 0 "J11" H 14128 13476 50  0000 L CNN
 F 1 "Conn_01x05_Female" H 14128 13385 50  0000 L CNN
-F 2 "" H 14100 13450 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-5-3.5-H_1x05_P3.50mm_Horizontal" H 14100 13450 50  0001 C CNN
 F 3 "~" H 14100 13450 50  0001 C CNN
 	1    14100 13450
 	1    0    0    -1  
@@ -4117,33 +4104,7 @@ Wire Wire Line
 	13550 13250 13900 13250
 Text Notes 14700 14150 0    50   ~ 0
 OUTPUT CONN
-$Comp
-L Device:Fuse F4
-U 1 1 5F8DB4F9
-P 5250 1000
-F 0 "F4" V 5053 1000 50  0000 C CNN
-F 1 "Fuse" V 5144 1000 50  0000 C CNN
-F 2 "" V 5180 1000 50  0001 C CNN
-F 3 "~" H 5250 1000 50  0001 C CNN
-	1    5250 1000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F5
-U 1 1 5F8DBA21
-P 5250 2200
-F 0 "F5" V 5053 2200 50  0000 C CNN
-F 1 "Fuse" V 5144 2200 50  0000 C CNN
-F 2 "" V 5180 2200 50  0001 C CNN
-F 3 "~" H 5250 2200 50  0001 C CNN
-	1    5250 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 2200 5600 2200
 Connection ~ 5600 2200
-Wire Wire Line
-	5100 2200 4000 2200
 Wire Wire Line
 	6950 1400 7300 1400
 Wire Wire Line
@@ -4413,8 +4374,6 @@ Wire Wire Line
 	4700 1500 4900 1500
 Wire Wire Line
 	4900 1500 4900 1000
-Wire Wire Line
-	4900 1000 5100 1000
 $Comp
 L Device:CP C39
 U 1 1 5E00BA06
@@ -4441,8 +4400,6 @@ Wire Wire Line
 	5900 1450 5900 1550
 Wire Wire Line
 	5600 1700 5600 1550
-Wire Wire Line
-	5400 1000 5600 1000
 Wire Wire Line
 	5900 1000 5900 1150
 Wire Wire Line
@@ -4716,4 +4673,23 @@ Wire Wire Line
 	15400 5350 15450 5350
 Wire Wire Line
 	15400 5750 15450 5750
+Wire Wire Line
+	4900 1000 5600 1000
+Wire Wire Line
+	4000 2200 5600 2200
+Text Notes 4000 5550 0    50   ~ 0
+GAIN SW
+Wire Wire Line
+	1450 3900 1600 3900
+$Comp
+L Connector:AudioJack2 J2
+U 1 1 5D6651E0
+P 1250 4000
+F 0 "J2" H 1282 4325 50  0000 C CNN
+F 1 "AudioJack2" H 1282 4234 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 1250 4000 50  0001 C CNN
+F 3 "~" H 1250 4000 50  0001 C CNN
+	1    1250 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
