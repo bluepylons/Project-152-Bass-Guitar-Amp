@@ -70,8 +70,6 @@ F 3 "~" H 5600 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 2000 5600 2200
-Wire Wire Line
-	5600 2200 5900 2200
 $Comp
 L Device:Transformer_1P_2S T1
 U 1 1 5D62D85D
@@ -108,23 +106,23 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0102
 U 1 1 5D654E8A
-P 5900 900
-F 0 "#PWR0102" H 5900 750 50  0001 C CNN
-F 1 "+12V" H 5915 1073 50  0000 C CNN
-F 2 "" H 5900 900 50  0001 C CNN
-F 3 "" H 5900 900 50  0001 C CNN
-	1    5900 900 
+P 5600 900
+F 0 "#PWR0102" H 5600 750 50  0001 C CNN
+F 1 "+12V" H 5615 1073 50  0000 C CNN
+F 2 "" H 5600 900 50  0001 C CNN
+F 3 "" H 5600 900 50  0001 C CNN
+	1    5600 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-12V #PWR0103
 U 1 1 5D6561DF
-P 5900 2300
-F 0 "#PWR0103" H 5900 2400 50  0001 C CNN
-F 1 "-12V" H 5915 2473 50  0000 C CNN
-F 2 "" H 5900 2300 50  0001 C CNN
-F 3 "" H 5900 2300 50  0001 C CNN
-	1    5900 2300
+P 5600 2300
+F 0 "#PWR0103" H 5600 2400 50  0001 C CNN
+F 1 "-12V" H 5615 2473 50  0000 C CNN
+F 2 "" H 5600 2300 50  0001 C CNN
+F 3 "" H 5600 2300 50  0001 C CNN
+	1    5600 2300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -273,7 +271,6 @@ F 3 "~" H 7450 1850 50  0001 C CNN
 	1    7450 1850
 	0    1    1    0   
 $EndComp
-Connection ~ 5600 2200
 Wire Wire Line
 	6950 1400 7300 1400
 Wire Wire Line
@@ -282,24 +279,8 @@ Wire Wire Line
 	6950 1850 7300 1850
 Wire Wire Line
 	6950 1950 7850 1950
-$Comp
-L Device:CP C38
-U 1 1 5E1D3B0E
-P 5900 1300
-F 0 "C38" H 6018 1346 50  0000 L CNN
-F 1 "1000uF 50V" H 6018 1255 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm" H 5938 1150 50  0001 C CNN
-F 3 "~" H 5900 1300 50  0001 C CNN
-	1    5900 1300
-	1    0    0    -1  
-$EndComp
 Text Notes 5950 2100 0    50   ~ 0
 (DNI C38 - extra if needed)
-Wire Wire Line
-	5900 2000 5900 2200
-Connection ~ 5900 2200
-Wire Wire Line
-	5900 2300 5900 2200
 Wire Wire Line
 	4700 1500 4900 1500
 Wire Wire Line
@@ -315,28 +296,10 @@ F 3 "~" H 5600 1850 50  0001 C CNN
 	1    5600 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C40
-U 1 1 5E00BF29
-P 5900 1850
-F 0 "C40" H 5650 1900 50  0000 L CNN
-F 1 "1000uF 50V" H 5950 1750 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D17.0mm_P7.50mm" H 5938 1700 50  0001 C CNN
-F 3 "~" H 5900 1850 50  0001 C CNN
-	1    5900 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1450 5900 1550
 Wire Wire Line
 	5600 1700 5600 1550
 Wire Wire Line
-	5900 1000 5900 1150
-Wire Wire Line
 	5600 1150 5600 1000
-Connection ~ 5600 1000
-Wire Wire Line
-	5600 1000 5900 1000
 $Comp
 L power:GND #PWR0215
 U 1 1 5E0F1DA3
@@ -353,14 +316,6 @@ Wire Wire Line
 Connection ~ 5600 1550
 Wire Wire Line
 	5600 1550 5600 1450
-Wire Wire Line
-	5600 1550 5900 1550
-Connection ~ 5900 1550
-Wire Wire Line
-	5900 1550 5900 1700
-Wire Wire Line
-	5900 900  5900 1000
-Connection ~ 5900 1000
 Wire Wire Line
 	4900 1000 5600 1000
 Wire Wire Line
@@ -440,4 +395,10 @@ Wire Notes Line
 	10700 2900 750  2900
 Wire Notes Line
 	750  650  750  2900
+Connection ~ 5600 2200
+Wire Wire Line
+	5600 2300 5600 2200
+Wire Wire Line
+	5600 1000 5600 900 
+Connection ~ 5600 1000
 $EndSCHEMATC
