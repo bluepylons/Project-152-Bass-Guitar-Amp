@@ -449,7 +449,7 @@ U 1 1 5D68B83B
 P 5200 2700
 F 0 "D2" V 5154 2779 50  0000 L CNN
 F 1 "1N4148" V 5245 2779 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5200 2525 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 2525 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5200 2700 50  0001 C CNN
 	1    5200 2700
 	0    1    1    0   
@@ -3795,62 +3795,6 @@ Wire Wire Line
 	18300 14400 18300 14450
 Wire Wire Line
 	18300 14400 18850 14400
-$Comp
-L Connector_Generic:Conn_01x03 J7
-U 1 1 5F316C3C
-P 1750 1350
-F 0 "J7" H 1830 1392 50  0000 L CNN
-F 1 "Conn_01x03" H 1830 1301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 1750 1350 50  0001 C CNN
-F 3 "~" H 1750 1350 50  0001 C CNN
-	1    1750 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR02
-U 1 1 5F3173A9
-P 1300 1150
-F 0 "#PWR02" H 1300 1000 50  0001 C CNN
-F 1 "+12V" H 1315 1323 50  0000 C CNN
-F 2 "" H 1300 1150 50  0001 C CNN
-F 3 "" H 1300 1150 50  0001 C CNN
-	1    1300 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR03
-U 1 1 5F317B5C
-P 1300 1600
-F 0 "#PWR03" H 1300 1700 50  0001 C CNN
-F 1 "-12V" H 1315 1773 50  0000 C CNN
-F 2 "" H 1300 1600 50  0001 C CNN
-F 3 "" H 1300 1600 50  0001 C CNN
-	1    1300 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5F3186A1
-P 1050 1400
-F 0 "#PWR01" H 1050 1150 50  0001 C CNN
-F 1 "GND" H 1055 1227 50  0000 C CNN
-F 2 "" H 1050 1400 50  0001 C CNN
-F 3 "" H 1050 1400 50  0001 C CNN
-	1    1050 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1350 1050 1350
-Wire Wire Line
-	1050 1350 1050 1400
-Wire Wire Line
-	1550 1250 1300 1250
-Wire Wire Line
-	1300 1250 1300 1150
-Wire Wire Line
-	1550 1450 1300 1450
-Wire Wire Line
-	1300 1450 1300 1600
 Text GLabel 12650 7850 0    50   Input ~ 0
 EFXreturn
 Wire Wire Line

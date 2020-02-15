@@ -3795,62 +3795,6 @@ Wire Wire Line
 	18300 14400 18300 14450
 Wire Wire Line
 	18300 14400 18850 14400
-$Comp
-L Connector_Generic:Conn_01x03 J7
-U 1 1 5F316C3C
-P 1750 1350
-F 0 "J7" H 1830 1392 50  0000 L CNN
-F 1 "Conn_01x03" H 1830 1301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 1750 1350 50  0001 C CNN
-F 3 "~" H 1750 1350 50  0001 C CNN
-	1    1750 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR02
-U 1 1 5F3173A9
-P 1300 1150
-F 0 "#PWR02" H 1300 1000 50  0001 C CNN
-F 1 "+12V" H 1315 1323 50  0000 C CNN
-F 2 "" H 1300 1150 50  0001 C CNN
-F 3 "" H 1300 1150 50  0001 C CNN
-	1    1300 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR03
-U 1 1 5F317B5C
-P 1300 1600
-F 0 "#PWR03" H 1300 1700 50  0001 C CNN
-F 1 "-12V" H 1315 1773 50  0000 C CNN
-F 2 "" H 1300 1600 50  0001 C CNN
-F 3 "" H 1300 1600 50  0001 C CNN
-	1    1300 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5F3186A1
-P 1050 1400
-F 0 "#PWR01" H 1050 1150 50  0001 C CNN
-F 1 "GND" H 1055 1227 50  0000 C CNN
-F 2 "" H 1050 1400 50  0001 C CNN
-F 3 "" H 1050 1400 50  0001 C CNN
-	1    1050 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1350 1050 1350
-Wire Wire Line
-	1050 1350 1050 1400
-Wire Wire Line
-	1550 1250 1300 1250
-Wire Wire Line
-	1300 1250 1300 1150
-Wire Wire Line
-	1550 1450 1300 1450
-Wire Wire Line
-	1300 1450 1300 1600
 Text GLabel 12650 7850 0    50   Input ~ 0
 EFXreturn
 Wire Wire Line
@@ -3994,7 +3938,7 @@ U 1 1 5E4B9A35
 P 3150 1350
 F 0 "J9" H 3230 1392 50  0000 L CNN
 F 1 "Conn_01x03" H 3230 1301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 3150 1350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3150 1350 50  0001 C CNN
 F 3 "~" H 3150 1350 50  0001 C CNN
 	1    3150 1350
 	1    0    0    -1  
@@ -4045,45 +3989,45 @@ Wire Wire Line
 Wire Wire Line
 	2700 1450 2700 1600
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 5E4F0BC3
 P 3950 1150
-F 0 "H?" H 4050 1196 50  0000 L CNN
+F 0 "H1" H 4050 1196 50  0000 L CNN
 F 1 "MountingHole" H 4050 1105 50  0000 L CNN
-F 2 "" H 3950 1150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3950 1150 50  0001 C CNN
 F 3 "~" H 3950 1150 50  0001 C CNN
 	1    3950 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 5E4F1591
 P 3950 1350
-F 0 "H?" H 4050 1396 50  0000 L CNN
+F 0 "H2" H 4050 1396 50  0000 L CNN
 F 1 "MountingHole" H 4050 1305 50  0000 L CNN
-F 2 "" H 3950 1350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3950 1350 50  0001 C CNN
 F 3 "~" H 3950 1350 50  0001 C CNN
 	1    3950 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 5E4F1934
 P 3950 1550
-F 0 "H?" H 4050 1596 50  0000 L CNN
+F 0 "H3" H 4050 1596 50  0000 L CNN
 F 1 "MountingHole" H 4050 1505 50  0000 L CNN
-F 2 "" H 3950 1550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3950 1550 50  0001 C CNN
 F 3 "~" H 3950 1550 50  0001 C CNN
 	1    3950 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 5E4F1B80
 P 3950 1750
-F 0 "H?" H 4050 1796 50  0000 L CNN
+F 0 "H4" H 4050 1796 50  0000 L CNN
 F 1 "MountingHole" H 4050 1705 50  0000 L CNN
-F 2 "" H 3950 1750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3950 1750 50  0001 C CNN
 F 3 "~" H 3950 1750 50  0001 C CNN
 	1    3950 1750
 	1    0    0    -1  
