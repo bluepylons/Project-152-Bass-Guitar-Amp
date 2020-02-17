@@ -4032,4 +4032,34 @@ F 3 "~" H 3350 12800 50  0001 C CNN
 	1    3350 12800
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5E4DCB7D
+P 8950 11250
+F 0 "J7" H 9030 11242 50  0000 L CNN
+F 1 "Conn_01x02" H 9030 11151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8950 11250 50  0001 C CNN
+F 3 "~" H 8950 11250 50  0001 C CNN
+	1    8950 11250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 11350 0    50   Input ~ 0
+Overload
+$Comp
+L power:GND #PWR01
+U 1 1 5E4E06DC
+P 8200 11200
+F 0 "#PWR01" H 8200 10950 50  0001 C CNN
+F 1 "GND" H 8205 11027 50  0000 C CNN
+F 2 "" H 8200 11200 50  0001 C CNN
+F 3 "" H 8200 11200 50  0001 C CNN
+	1    8200 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 11250 8500 11250
+Wire Wire Line
+	8500 11250 8500 11200
+Wire Wire Line
+	8500 11200 8200 11200
 $EndSCHEMATC

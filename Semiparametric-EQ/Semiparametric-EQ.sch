@@ -1,0 +1,321 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:NE5532 U1
+U 1 1 5E4A3E58
+P 3950 1650
+F 0 "U1" H 4100 2200 50  0000 C CNN
+F 1 "NE5532" H 4100 2100 50  0000 C CNN
+F 2 "" H 3950 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U1
+U 2 1 5E4A4F1E
+P 6850 1550
+F 0 "U1" H 6850 1917 50  0000 C CNN
+F 1 "NE5532" H 6850 1826 50  0000 C CNN
+F 2 "" H 6850 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6850 1550 50  0001 C CNN
+	2    6850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U1
+U 3 1 5E4A7D67
+P 3950 1650
+F 0 "U1" H 3908 1696 50  0000 L CNN
+F 1 "NE5532" H 3908 1605 50  0000 L CNN
+F 2 "" H 3950 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 3950 1650 50  0001 C CNN
+	3    3950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4AE7A5
+P 5850 3200
+F 0 "#PWR?" H 5850 2950 50  0001 C CNN
+F 1 "GND" H 5855 3027 50  0000 C CNN
+F 2 "" H 5850 3200 50  0001 C CNN
+F 3 "" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E4AE954
+P 6100 2850
+F 0 "#PWR?" H 6100 2700 50  0001 C CNN
+F 1 "+12V" H 6115 3023 50  0000 C CNN
+F 2 "" H 6100 2850 50  0001 C CNN
+F 3 "" H 6100 2850 50  0001 C CNN
+	1    6100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E4AEB97
+P 6100 3450
+F 0 "#PWR?" H 6100 3550 50  0001 C CNN
+F 1 "-12V" H 6115 3623 50  0000 C CNN
+F 2 "" H 6100 3450 50  0001 C CNN
+F 3 "" H 6100 3450 50  0001 C CNN
+	1    6100 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E4AEF5B
+P 6100 3000
+F 0 "C?" H 6215 3046 50  0000 L CNN
+F 1 "0.1uF" H 6215 2955 50  0000 L CNN
+F 2 "" H 6138 2850 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E4AF9A5
+P 6100 3300
+F 0 "C?" H 6215 3346 50  0000 L CNN
+F 1 "0.1uF" H 6215 3255 50  0000 L CNN
+F 2 "" H 6138 3150 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3150 5850 3150
+Wire Wire Line
+	5850 3150 5850 3200
+Connection ~ 6100 3150
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 1 1 5E4B7CE1
+P 7650 4200
+F 0 "U?" H 7800 4750 50  0000 C CNN
+F 1 "NE5532" H 7800 4650 50  0000 C CNN
+F 2 "" H 7650 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 7650 4200 50  0001 C CNN
+	1    7650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 2 1 5E4B7CE7
+P 8650 4250
+F 0 "U?" H 8650 4617 50  0000 C CNN
+F 1 "NE5532" H 8650 4526 50  0000 C CNN
+F 2 "" H 8650 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 8650 4250 50  0001 C CNN
+	2    8650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 3 1 5E4B7CED
+P 7650 4200
+F 0 "U?" H 7608 4246 50  0000 L CNN
+F 1 "NE5532" H 7608 4155 50  0000 L CNN
+F 2 "" H 7650 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 7650 4200 50  0001 C CNN
+	3    7650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 5E4BB27E
+P 1200 1200
+F 0 "J?" H 1308 1581 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 1308 1490 50  0000 C CNN
+F 2 "" H 1200 1200 50  0001 C CNN
+F 3 "~" H 1200 1200 50  0001 C CNN
+	1    1200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E4BCC14
+P 2150 1000
+F 0 "#PWR?" H 2150 850 50  0001 C CNN
+F 1 "+12V" H 2165 1173 50  0000 C CNN
+F 2 "" H 2150 1000 50  0001 C CNN
+F 3 "" H 2150 1000 50  0001 C CNN
+	1    2150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E4BD34D
+P 2500 1100
+F 0 "#PWR?" H 2500 1200 50  0001 C CNN
+F 1 "-12V" H 2515 1273 50  0000 C CNN
+F 2 "" H 2500 1100 50  0001 C CNN
+F 3 "" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E4BD995
+P 2250 1200
+F 0 "#PWR?" H 2250 950 50  0001 C CNN
+F 1 "GND" H 2255 1027 50  0000 C CNN
+F 2 "" H 2250 1200 50  0001 C CNN
+F 3 "" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1000 2150 1000
+Wire Wire Line
+	1400 1100 2500 1100
+Wire Wire Line
+	1400 1200 2250 1200
+Text GLabel 1400 1300 2    50   Input ~ 0
+IntoEQ
+Text GLabel 1400 1400 2    50   Input ~ 0
+FromEq
+$Comp
+L power:+12V #PWR?
+U 1 1 5E4C720E
+P 3850 1350
+F 0 "#PWR?" H 3850 1200 50  0001 C CNN
+F 1 "+12V" H 3865 1523 50  0000 C CNN
+F 2 "" H 3850 1350 50  0001 C CNN
+F 3 "" H 3850 1350 50  0001 C CNN
+	1    3850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E4C77AA
+P 3850 1950
+F 0 "#PWR?" H 3850 2050 50  0001 C CNN
+F 1 "-12V" H 3865 2123 50  0000 C CNN
+F 2 "" H 3850 1950 50  0001 C CNN
+F 3 "" H 3850 1950 50  0001 C CNN
+	1    3850 1950
+	-1   0    0    1   
+$EndComp
+Text GLabel 3000 1550 0    50   Input ~ 0
+IntoEQ
+Wire Wire Line
+	3000 1550 3100 1550
+$Comp
+L Device:R R?
+U 1 1 5E4C8AF3
+P 3100 1850
+F 0 "R?" H 3170 1896 50  0000 L CNN
+F 1 "10k" H 3170 1805 50  0000 L CNN
+F 2 "" V 3030 1850 50  0001 C CNN
+F 3 "~" H 3100 1850 50  0001 C CNN
+	1    3100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1700 3100 1550
+Connection ~ 3100 1550
+Wire Wire Line
+	3100 1550 3650 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5E4C9339
+P 3100 2000
+F 0 "#PWR?" H 3100 1750 50  0001 C CNN
+F 1 "GND" H 3105 1827 50  0000 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1750 3500 1750
+Wire Wire Line
+	3500 1750 3500 2200
+Wire Wire Line
+	3500 2200 4350 2200
+Wire Wire Line
+	4350 2200 4350 1650
+Wire Wire Line
+	4350 1650 4250 1650
+$Comp
+L Device:R R?
+U 1 1 5E4CB190
+P 4600 1650
+F 0 "R?" V 4393 1650 50  0000 C CNN
+F 1 "3.3k" V 4484 1650 50  0000 C CNN
+F 2 "" V 4530 1650 50  0001 C CNN
+F 3 "~" H 4600 1650 50  0001 C CNN
+	1    4600 1650
+	0    1    1    0   
+$EndComp
+Connection ~ 4350 1650
+Wire Wire Line
+	4450 1650 4350 1650
+$Comp
+L Device:R_POT RV?
+U 1 1 5E4D454B
+P 6050 1650
+F 0 "RV?" V 5843 1650 50  0000 C CNN
+F 1 "Treble 10k" V 5934 1650 50  0000 C CNN
+F 2 "" H 6050 1650 50  0001 C CNN
+F 3 "~" H 6050 1650 50  0001 C CNN
+	1    6050 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 1650 6350 1650
+Wire Wire Line
+	4900 1650 4900 1300
+Wire Wire Line
+	6300 1300 6300 1450
+Wire Wire Line
+	6300 1450 6550 1450
+Connection ~ 4900 1650
+Wire Wire Line
+	4900 1650 4750 1650
+$Comp
+L Device:R_POT RV?
+U 1 1 5E4D7C15
+P 5200 2100
+F 0 "RV?" V 4993 2100 50  0000 C CNN
+F 1 "Bass 10k" V 5084 2100 50  0000 C CNN
+F 2 "" H 5200 2100 50  0001 C CNN
+F 3 "~" H 5200 2100 50  0001 C CNN
+	1    5200 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1300 6300 1300
+Wire Wire Line
+	4900 1650 5900 1650
+Wire Wire Line
+	4900 1650 4900 2100
+Wire Wire Line
+	4900 2100 5050 2100
+Wire Wire Line
+	5350 2100 6350 2100
+Wire Wire Line
+	6350 2100 6350 1650
+Connection ~ 6350 1650
+Wire Wire Line
+	6350 1650 6550 1650
+$EndSCHEMATC

@@ -1244,7 +1244,7 @@ U 1 1 5D7D7ACF
 P 7800 12450
 F 0 "D5" V 7846 12371 50  0000 R CNN
 F 1 "1N4148" V 7755 12371 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7800 12275 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 12275 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7800 12450 50  0001 C CNN
 	1    7800 12450
 	0    -1   -1   0   
@@ -1255,7 +1255,7 @@ U 1 1 5D7D7AD5
 P 7800 12750
 F 0 "D6" V 7846 12671 50  0000 R CNN
 F 1 "1N4148" V 7755 12671 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7800 12575 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 12575 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7800 12750 50  0001 C CNN
 	1    7800 12750
 	0    -1   -1   0   
@@ -4032,4 +4032,34 @@ F 3 "~" H 3350 12800 50  0001 C CNN
 	1    3350 12800
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E4DCB7D
+P 8950 11250
+F 0 "J?" H 9030 11242 50  0000 L CNN
+F 1 "Conn_01x02" H 9030 11151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8950 11250 50  0001 C CNN
+F 3 "~" H 8950 11250 50  0001 C CNN
+	1    8950 11250
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 11350 0    50   Input ~ 0
+Overload
+$Comp
+L power:GND #PWR?
+U 1 1 5E4E06DC
+P 8200 11200
+F 0 "#PWR?" H 8200 10950 50  0001 C CNN
+F 1 "GND" H 8205 11027 50  0000 C CNN
+F 2 "" H 8200 11200 50  0001 C CNN
+F 3 "" H 8200 11200 50  0001 C CNN
+	1    8200 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 11250 8500 11250
+Wire Wire Line
+	8500 11250 8500 11200
+Wire Wire Line
+	8500 11200 8200 11200
 $EndSCHEMATC
