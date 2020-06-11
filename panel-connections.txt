@@ -1,0 +1,46 @@
+Front panel:
+
+(switch)     Power
+(5mm LED)    Power
+(5mm LED)    Overload
+(1/4" jack)  Guitar-in
+(switch)     Gain
+(knob)       Gain
+(knob)       Master Volume
+
+(switch)     Mute 
+(switch)     High-pass filter
+(switch)     High-pass filter frequency 
+
+(1/8" jack)  Aux in
+(1/8" jack)  Headphone out
+(knob)       Headphone volume
+
+(knob)       DI send level
+
+Front panel (EQ)
+(switch)     Bass peak/shelf
+(knob)       Bass level
+(knob)       Bass center frequency
+(knob)       Low-mid level 
+(knob)       Low-mid frequency
+(knob)       High-mid level
+(knob)       High-mid frequency
+(knob)       Treble level
+(knob)       Treble frequency
+
+
+Back panel:		Depth 
+(1/4" jack)      EFX out
+(1/4" jack)      EFX in
+(switch)         DI source 
+(switch)         DI ground lift
+(XLR)            DI 
+(knob)           Balance 
+(knob)           Frequency 
+(1/4" jack)      Tuner
+(IEC connector)  Power In
+(1/4" jack)      Woofer
+(1/4" jack)      Mids
+(1/4" jack)      Woofer
+(Speak-On)       Unified Woofer+Mids
