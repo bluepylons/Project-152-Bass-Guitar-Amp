@@ -42,5 +42,28 @@ Back panel:		Depth
 (IEC connector)  Power In
 (1/4" jack)      Woofer
 (1/4" jack)      Mids
-(1/4" jack)      Woofer
+(1/4" jack)      Tweeter
 (Speak-On)       Unified Woofer+Mids
+
+Raw:
+Guitar In (1/4" jack)
+Power (LED)
+Overload (LED)
+
+DI out (XLR)
+DI select (switch)
+DI ground lift (switch)
+
+Highs (1/4"
+Lows (1/4")
+Tweeter (1/4"
+
+Gain Sw (toggle sw)
+Gain pot (dual 10K)
+HPF Bypass (dual switch)
+HPF Frequency (dual switch)
+EFX Send (1/4" jack) 
+EFX Return (1/4" jack)
+Aux In (3.5mm jack)
+Headphone Out (3.5mm jack)
+Tuner Out (1/4" jack)
